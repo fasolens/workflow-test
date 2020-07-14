@@ -26,7 +26,5 @@ jobs:
       uses: avto-dev/markdown-lint@v1.3.0
       with:
         config: .markdownlint.json
-        fix: true
-        output: true
-        args: './*.md'
+        args: '-f .'
 
