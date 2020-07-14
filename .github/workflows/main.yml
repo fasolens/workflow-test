@@ -34,5 +34,5 @@ jobs:
         # Fix basic errors
         fix: true
         # Files (directories|globs) for a work or any additional arguments
-        args: .
+        args: .md
 
