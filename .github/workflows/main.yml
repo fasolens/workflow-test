@@ -26,10 +26,13 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
 
-    - name: markdownlint-cli
-      uses: nosborn/github-action-markdown-cli@v1.1.1
+    - name: Markdown Linting Action
+      uses: avto-dev/markdown-lint@v1.3.0
       with:
-        # configuration file (JSON or YAML)
-        config_file: ".markdownlintrc"
-        # files, directories, or globs
-        files: "*.md"
+        # Configuration file (JSON, JSONC, or YAML)
+        config: .markdownlintrc
+        # Fix basic errors
+        fix: true
+        # Files (directories|globs) for a work or any additional arguments
+        args: .
+
