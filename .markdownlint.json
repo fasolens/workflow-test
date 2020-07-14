@@ -1,5 +1,6 @@
 {
   "MD013": false,
   "no-inline-html": false,
-  "ol-prefix": false
+  "ol-prefix": false,
+  "no-space-in-emphasis": false
 }
