@@ -22,9 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Markdown Linting Action
-      uses: avto-dev/markdown-lint@v1.3.0
-      with:
-        config: .markdownlint.json
-        args: '-f .'
-
+    - name: Markdown Lint
+      run: |
+        npm install -g markdownlint-cli
+        ./node_modules/markdownlint-cli/markdownlint.js -c .markdownlint.json -i node_modules -f .
