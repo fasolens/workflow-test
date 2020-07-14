@@ -23,6 +23,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Markdown Lint
-      run: |
-        npm install markdownlint-cli
-        ./node_modules/markdownlint-cli/markdownlint.js -c .markdownlint.json -i node_modules -f .
+      run: npm install markdownlint-cli; ./node_modules/markdownlint-cli/markdownlint.js -c .markdownlint.json -i node_modules -f .
