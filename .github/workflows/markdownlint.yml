@@ -27,5 +27,3 @@ jobs:
       with:
         config_file: .markdownlint.json
         files: .        
-    - name: Spellcheck
-      uses: rojopolis/spellcheck-github-actions@0.5.0
