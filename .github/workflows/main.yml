@@ -22,8 +22,10 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: markdownlint-cli
+    - name: Markdown lint
       uses: nosborn/github-action-markdown-cli@v1.1.1
       with:
         config_file: .markdownlint.json
-        files: .
+        files: .        
+    - name: Spellcheck
+      uses: rojopolis/spellcheck-github-actions@0.5.0
