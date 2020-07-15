@@ -25,7 +25,5 @@ jobs:
     - name: markdownlint-cli
       uses: nosborn/github-action-markdown-cli@v1.1.1
       with:
-        # configuration file (JSON or YAML)
         config_file: .markdownlint.json
-        # files, directories, or globs
         files: '*.md'
