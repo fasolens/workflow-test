@@ -1,0 +1,9 @@
+aspell
+Celerway
+ddfsdf
+html
+mdx
+pyspelling
+utf
+wordlist
+workflow
